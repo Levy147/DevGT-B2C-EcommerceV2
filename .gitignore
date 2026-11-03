@@ -1,0 +1,13 @@
+# Referencias de diseño y archivos pesados (no forman parte de la tienda)
+Referncias/
+
+# Dependencias / builds
+node_modules/
+dist/
+build/
+
+# Temporales y sistema
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini

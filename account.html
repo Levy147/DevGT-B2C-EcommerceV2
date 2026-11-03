@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi cuenta · Lunette</title>
+  <meta name="description" content="Tu cuenta demo, pedidos y favoritos de Lunette.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎀</text></svg>">
+  <link rel="stylesheet" href="css/y2k.css">
+</head>
+<body data-page="account">
+  <div class="site-shell">
+    <div class="browser-window">
+      <div data-chrome="windowbar"></div>
+      <div data-chrome="header"></div>
+
+      <div class="layout">
+        <div data-chrome="sidebar"></div>
+
+        <main class="main-content">
+          <section class="page-hero">
+            <h1>Mi cuenta</h1>
+            <p>Tu espacio cute dentro de Lunette ₊˚⊹</p>
+          </section>
+
+          <div class="account-grid">
+            <section class="profile-card">
+              <img src="public/img/brand/avatar.png" alt="Avatar de la conejita Lunette">
+              <h2>Bunny</h2>
+              <p>bunny@lunette.com</p>
+              <div class="profile-links">
+                <a class="btn btn-ghost btn-sm" href="favorites.html">♡ <span id="favTotal">0</span> favoritos</a>
+                <a class="btn btn-sm" href="browse.html">Seguir comprando</a>
+              </div>
+            </section>
+
+            <section>
+              <div class="section-head">
+                <h2 class="section-title" id="ordersTitle">Mis pedidos</h2>
+                <span class="link-more"><span id="orderCount">0</span> pedidos</span>
+              </div>
+              <div class="order-list" id="ordersList"></div>
+            </section>
+          </div>
+        </main>
+      </div>
+
+      <div data-chrome="footer"></div>
+    </div>
+  </div>
+
+  <div data-chrome="drawer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

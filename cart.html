@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito · Lunette</title>
+  <meta name="description" content="Revisa tu carrito Lunette y confirma tu pedido en Guatemala.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎀</text></svg>">
+  <link rel="stylesheet" href="css/y2k.css">
+</head>
+<body data-page="cart">
+  <div class="site-shell">
+    <div class="browser-window">
+      <div data-chrome="windowbar"></div>
+      <div data-chrome="header"></div>
+
+      <div class="layout">
+        <div data-chrome="sidebar"></div>
+
+        <main class="main-content">
+          <section class="page-hero">
+            <h1>Tu carrito</h1>
+            <p>Revisa tus piezas cute y confirma tu pedido ♡</p>
+          </section>
+
+          <div class="cart-layout">
+            <section>
+              <div class="cart-list" id="cartList"></div>
+
+              <section class="contact-card" id="checkoutSection" style="margin-top:18px;" hidden>
+                <h2>Datos de entrega</h2>
+                <form id="checkoutForm" novalidate>
+                  <div class="form-grid">
+                    <div class="field">
+                      <label for="orderName">Nombre completo</label>
+                      <input id="orderName" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                      <label for="orderPhone">Teléfono / WhatsApp</label>
+                      <input id="orderPhone" name="phone" type="tel" autocomplete="tel" required>
+                    </div>
+                    <div class="field full">
+                      <label for="orderAddress">Dirección de entrega</label>
+                      <input id="orderAddress" name="address" type="text" autocomplete="street-address" required>
+                    </div>
+                    <div class="field">
+                      <label for="orderPayment">Método de pago</label>
+                      <select id="orderPayment" name="payment">
+                        <option value="contra-entrega">Pago contra entrega</option>
+                        <option value="transferencia">Transferencia bancaria</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="orderNote">Nota (opcional)</label>
+                      <input id="orderNote" name="note" type="text" placeholder="Color, referencia, horario…">
+                    </div>
+                  </div>
+
+                  <div id="checkoutTotals" style="margin:16px 0;display:grid;gap:8px;"></div>
+
+                  <button class="btn btn-block" type="submit">Confirmar pedido 🎀</button>
+                  <p style="font-size:.78rem;color:var(--muted);margin-top:10px;text-align:center;">
+                    Al confirmar se genera tu pedido y podrás enviarlo por WhatsApp o correo.
+                  </p>
+                </form>
+              </section>
+
+              <div id="orderSuccess" hidden></div>
+            </section>
+
+            <aside class="cart-summary" id="cartSummary" aria-label="Resumen del carrito"></aside>
+          </div>
+        </main>
+      </div>
+
+      <div data-chrome="footer"></div>
+    </div>
+  </div>
+
+  <div data-chrome="drawer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages · Lunette</title>
+  <meta name="description" content="Contáctanos: pedidos, tallas y envíos de Lunette Guatemala.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎀</text></svg>">
+  <link rel="stylesheet" href="css/y2k.css">
+</head>
+<body data-page="messages">
+  <div class="site-shell">
+    <div class="browser-window">
+      <div data-chrome="windowbar"></div>
+      <div data-chrome="header"></div>
+
+      <div class="layout">
+        <div data-chrome="sidebar"></div>
+
+        <main class="main-content">
+          <section class="page-hero">
+            <h1>Messages</h1>
+            <p>¿Dudas con una talla, un envío o un pedido? Escríbenos, respondemos con cariño ♡</p>
+          </section>
+
+          <div class="message-layout">
+            <section class="contact-card">
+              <h2>Envíanos un mensaje</h2>
+              <form id="messageForm">
+                <div class="form-grid">
+                  <div class="field">
+                    <label for="msgName">Tu nombre</label>
+                    <input id="msgName" type="text" autocomplete="name" required>
+                  </div>
+                  <div class="field">
+                    <label for="msgEmail">Tu correo</label>
+                    <input id="msgEmail" type="email" autocomplete="email" placeholder="tu@correo.com">
+                  </div>
+                  <div class="field full">
+                    <label for="msgText">Mensaje</label>
+                    <textarea id="msgText" placeholder="Cuéntanos qué necesitas…" required></textarea>
+                  </div>
+                </div>
+                <button class="btn btn-block" type="submit" style="margin-top:14px;">Enviar mensaje ✉</button>
+              </form>
+            </section>
+
+            <aside class="contact-card">
+              <h2>También puedes</h2>
+              <a class="contact-line" id="whatsappContact" href="#" target="_blank" rel="noopener">
+                <span class="ico">💬</span> Escribir por WhatsApp
+              </a>
+              <a class="contact-line" href="mailto:info@lunette.com">
+                <span class="ico">✉</span> info@lunette.com
+              </a>
+              <a class="contact-line" href="https://instagram.com/lunette" target="_blank" rel="noopener">
+                <span class="ico">♡</span> @lunette en Instagram
+              </a>
+              <a class="contact-line" href="https://instagram.com/lunette" target="_blank" rel="noopener">
+                <span class="ico">✦</span> @lunette en TikTok
+              </a>
+              <p style="font-size:.82rem;color:var(--muted);margin-top:6px;">
+                Horario de atención: lunes a sábado, 9:00 a 18:00 (GMT-6).
+              </p>
+              <img src="public/img/brand/mascot.png" alt="Conejita Lunette" style="width:120px;margin:6px auto 0;">
+            </aside>
+          </div>
+        </main>
+      </div>
+
+      <div data-chrome="footer"></div>
+    </div>
+  </div>
+
+  <div data-chrome="drawer"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
